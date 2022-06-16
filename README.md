@@ -36,7 +36,7 @@ Distribution of human factors:
 
 Distribution of occurrence categories:
 
-![freq_cadors](img/occ_frq.png)
+![freq_cadors](img/occ_fq.png)
 
 ## Additional baselines for the task of automatic report categorization.
 
