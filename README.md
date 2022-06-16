@@ -3,4 +3,8 @@
 
 ## Additional baselines for the task of automatic report categorization.
 
-![characterbert+st](img/classification_ASRS.png)
+ASRS:
+![ASRS](img/classification_ASRS.png)
+
+CADORS:
+![Cadors](img/classification_CADORS.png)
