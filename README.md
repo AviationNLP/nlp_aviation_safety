@@ -12,6 +12,7 @@
 | Other / Unknown Workload |                          |
 
 Distribution of human factors:
+
 ![freq_asrs](img/freq_hf.png)
 
 
@@ -34,7 +35,8 @@ Distribution of human factors:
 | Wind shear or thunderstorm                                           |                            |
 
 Distribution of occurrence categories:
-![freq_cadors](img/occ_freq.png)
+
+![freq_cadors](img/occ_frq.png)
 
 ## Additional baselines for the task of automatic report categorization.
 
