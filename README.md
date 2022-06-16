@@ -45,3 +45,11 @@ ASRS:
 
 CADORS:
 ![Cadors](img/classification_CADORS.png)
+
+## Hyperparameters
+
+### Automatic report categorization
+
+### Topic modeling
+
+### Automatic summary generation
