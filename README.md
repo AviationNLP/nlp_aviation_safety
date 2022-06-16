@@ -1,7 +1,7 @@
 # Natural Language Processing of Aviation Occurrence Reports for Safety Management
 
 ## Datasets
-ASRS
+### ASRS
 |Human Factors             |                          |
 |:-------------------------|-------------------------:|
 | Communication Breakdown  | Physiological - Other    |
@@ -11,7 +11,11 @@ ASRS
 | Human-Machine Interface  | Troubleshooting          |
 | Other / Unknown Workload |                          |
 
-CADORS
+Distribution of human factors:
+![freq_asrs](img/freq_hf.png)
+
+
+### CADORS
 |Occurrence Categories                                                 |                            |
 |:---------------------------------------------------------------------|----------------------------|
 | ATM/CNS                                                              | Ground handling            |
@@ -29,6 +33,8 @@ CADORS
 | Turbulence encounter                                                 | Undershoot/overshoot       |
 | Wind shear or thunderstorm                                           |                            |
 
+Distribution of occurrence categories:
+![freq_cadors](img/occ_freq.png)
 
 ## Additional baselines for the task of automatic report categorization.
 
