@@ -92,49 +92,60 @@ Model hyperparameters:
 Maybe Georgios can add something here? (optional)
 
 ### Topic modeling
-Topics:
-| Topic Number | Top-10 Topic Words | Topic Quality
+#### Topics
+
+| Topic Number | Top-10 Topic Words | Topic Meaning (if 'good quality' topic)
 |:---|------------------------------------------------------------------------------------|-----|
-| 1 | go, around, runway, tailwind, touchdown, anomaly, landing, proper, point, attempted | good |
-| 2 | landing, gear, hard, nose, main, right, left, collapse, damage, resulting | good |
-| 3 | flight, instructor, action, delayed, remedial, student, inadequate, non, input, hover | good |
-| 4 | wire, glider, fence, out, transmission, their, route, allowed, effect, testing | poor |
-| 5 | decision, improper, his, attempt, planning, off, flight, land, take, tailwind | good |
-| 6 | which, resulted, an, with, subsequent, airplane, flight, collision, loss, impact | good |
-| 7 | from, clearance, maintain, maneuver, while, altitude, tree, line, terrain, adequate | good |
-| 8 | descent, off, aborted, rate, speed, uncontrolled, sign, strike, too, minimum | good |
-| 9 | procedure, follow, being, for, operator, between, without, operating, incident, forward | good |
-| 10 | landing, improper, flare, student, bounced, recovery, from, inadequate, supervision, misjudged | good |
-| 11 | system, or, fire, malfunction, emergency, level, insufficient, conduct, electrical, injury | poor |
-| 12 | associated, pressure, airstrip, induced, end, near, departure, with, becoming, is | poor |
+| 1 | go, around, runway, tailwind, touchdown, anomaly, landing, proper, point, attempted | landing incident |
+| 2 | landing, gear, hard, nose, main, right, left, collapse, damage, resulting | landing gear damage |
+| 3 | flight, instructor, action, delayed, remedial, student, inadequate, non, input, hover | instructor-student |
+| 4 | wire, glider, fence, out, transmission, their, route, allowed, effect, testing | - |
+| 5 | decision, improper, his, attempt, planning, off, flight, land, take, tailwind | improper planning and decision making |
+| 6 | which, resulted, an, with, subsequent, airplane, flight, collision, loss, impact | collision |
+| 7 | from, clearance, maintain, maneuver, while, altitude, tree, line, terrain, adequate | failure to maintain clearance from objects |
+| 8 | descent, off, aborted, rate, speed, uncontrolled, sign, strike, too, minimum | descent related incident |
+| 9 | procedure, follow, being, for, operator, between, without, operating, incident, forward | non adherence to procedures and directives |
+| 10 | landing, improper, flare, student, bounced, recovery, from, inadequate, supervision, misjudged | landing flare, bounced landing |
+| 11 | system, or, fire, malfunction, emergency, level, insufficient, conduct, electrical, injury | - |
+| 12 | associated, pressure, airstrip, induced, end, near, departure, with, becoming, is | - |
 | 13 | avoid, visual, see, continued, traffic, pattern, obstruction, inadvertently, his, area | good |
-| 14 | a, result, separation, incorrect, rudder, up, assembly, her, under, rule | poor |
-| 15 | runway, takeoff, after, any, on, instruction, abort, receiving, snow, adequately | poor | 
-| 16 | during, control, maintain, landing, directional, airplane, roll, loss, takeoff, aircraft | good |
-| 17 | fatigue, due, propeller, blade, engine, separation, from, fracture, bearing, crankshaft | good |
-| 18 | engine, for, reason, loss, power, undetermined, carburetor, total, partial, due | good |
-| 19 | approach, proper, on, final, path, land, while, time, altitude, sun | good |
-| 20 | that, not, be, could, determined, no, bird, ditch, had, variable | good |
-| 21 | aerodynamic, high, altitude, performance, density, weight, terrain, airplane, climb, exceeding | good |
-| 22 | landing, forced, for, terrain, suitable, lack, wa, factor, precautionary, initiation | good |
-| 23 | fuel, engine, power, loss, starvation, due, oil, line, total, improper | good |
-| 24 | terrain, attack, unsuitable, landing, area, selection, cruise, for, soft, encountered | good |
-| 25 | over, use, brake, excessive, application, improper, water, complete, onto, improperly | good |
-| 26 | condition, flight, into, instrument, weather, meteorological, terrain, disorientation, spatial, night | good |
-| 27 | wa, contributing, accident, factor, were, lack, by, airplane, his, experience | good |
-| 28 | before, properly, that, prior, ensure, checklist, secure, door, preflight, his | good |
-| 29 | condition, wind, crosswind, for, inadequate, compensation, gusty, gust, vehicle, evaluation | good |
-| 30 | helicopter, rotor, tail, main, passenger, impairment, autorotation, rpm, due, practice | good |
-| 31 | night, light, command, condition, not, field, dark, glidepath, by, maintained | good |
-| 32 | while, at, low, altitude, maneuvering, angle, turn, taxi, mechanical, known | good |
-| 33 | because, encounter, normal, precluded, flight, turbulence, crew, hydraulic, training, cause | poor |
-| 34 | did, not, when, airport, available, he, on, air, information, controller | good |
-| 35 | stall, airspeed, inadvertent, maintain, adequate, an, climb, initial, spin, loop | good |
-| 36 | maintenance, inadequate, by, personnel, wing, inspection, improper, flap, lookout, visual | good |
-| 37 | engine, power, loss, due, partial, cylinder, no, rod, valve, bolt | good |
-| 38 | excursion, it, operation, have, would, led, following, pitch, reveal, installation | poor |
-| 39 | fuel, engine, power, loss, exhaustion, inadequate, preflight, due, examination, planning | good |
-| 40 | gusting, both, also, cable, causal, throttle, other, mechanic, compensate, rollover | poor |
+| 14 | a, result, separation, incorrect, rudder, up, assembly, her, under, rule | - |
+| 15 | runway, takeoff, after, any, on, instruction, abort, receiving, snow, adequately | - | 
+| 16 | during, control, maintain, landing, directional, airplane, roll, loss, takeoff, aircraft | loss of control during landing / takeoff |
+| 17 | fatigue, due, propeller, blade, engine, separation, from, fracture, bearing, crankshaft | mechanical failure propellor / crankshaft |
+| 18 | engine, for, reason, loss, power, undetermined, carburetor, total, partial, due | loss of engine power |
+| 19 | approach, proper, on, final, path, land, while, time, altitude, sun | landing incident |
+| 20 | that, not, be, could, determined, no, bird, ditch, had, variable | factor could not be determined |
+| 21 | aerodynamic, high, altitude, performance, density, weight, terrain, airplane, climb, exceeding | high density altitude / maximum weight |
+| 22 | landing, forced, for, terrain, suitable, lack, wa, factor, precautionary, initiation | forced landing into unsuitable terrain |
+| 23 | fuel, engine, power, loss, starvation, due, oil, line, total, improper | loss of engine power |
+| 24 | terrain, attack, unsuitable, landing, area, selection, cruise, for, soft, encountered | unsuitable terrain for landing |
+| 25 | over, use, brake, excessive, application, improper, water, complete, onto, improperly | excessive / improper use of the breaks |
+| 26 | condition, flight, into, instrument, weather, meteorological, terrain, disorientation, spatial, night | instrument meteo conditions / bad weather |
+| 27 | wa, contributing, accident, factor, were, lack, by, airplane, his, experience | lack of experience |
+| 28 | before, properly, that, prior, ensure, checklist, secure, door, preflight, his | bad preparation |
+| 29 | condition, wind, crosswind, for, inadequate, compensation, gusty, gust, vehicle, evaluation | wind conditions |
+| 30 | helicopter, rotor, tail, main, passenger, impairment, autorotation, rpm, due, practice | helicopter incident |
+| 31 | night, light, command, condition, not, field, dark, glidepath, by, maintained | darkness related incident |
+| 32 | while, at, low, altitude, maneuvering, angle, turn, taxi, mechanical, known | low altitude maneuvre |
+| 33 | because, encounter, normal, precluded, flight, turbulence, crew, hydraulic, training, cause | - |
+| 34 | did, not, when, airport, available, he, on, air, information, controller | ATC |
+| 35 | stall, airspeed, inadvertent, maintain, adequate, an, climb, initial, spin, loop | stall / spin |
+| 36 | maintenance, inadequate, by, personnel, wing, inspection, improper, flap, lookout, visual | maintenance problem |
+| 37 | engine, power, loss, due, partial, cylinder, no, rod, valve, bolt | loss of engine power mechanical |
+| 38 | excursion, it, operation, have, would, led, following, pitch, reveal, installation | - |
+| 39 | fuel, engine, power, loss, exhaustion, inadequate, preflight, due, examination, planning | loss of engine power fuel exhaustion |
+| 40 | gusting, both, also, cable, causal, throttle, other, mechanic, compensate, rollover | - |
+
+#### Predictions
+
+| Document | Probable Cause and Findings | Top Topic | Second Topic | Third Topic | 
+|:---------|-----------------------------|-----------|--------------|-------------|
+| 1 | the pilot-in-command's restricted visual lookout from smoke entering the cockpit. factors were smoke in the cockpit which resulted in the pilot becoming disoriented. | 6 - collision - 0.13939428 | 27 - lack of experience - 0.11972487 | 12 - - - 0.109073296 |
+| 2 | The delay by the pilot-in-command to recover from a bounced landing resulting in a hard landing and subsequent collapse of the nose and left main landing gears. | 2 - landing gear damage - 0.4305554 | 31 - darkness related incident - 0.089310795 | 7 - failure to maintain clearance from objects - 0.0871765 |
+| 3 | the baggage tug driver's disregard for wet taxiway/ramp conditions, which resulted in his inability to avoid a taxiing airplane as he came around the end of a concourse building. Darkness, rain, and the wet ramp conditions were related factors. | 27 - lack of experience - 0.14264914 | 29 - wind conditions - 0.113165185 | 7 - failure to maintain clearance from objects - 0.095544904 |
+| 4 | the pilot's improper handling of the airplane flight controls at low altitude which resulted in an excessive rate of descent and collision with a tree. | 6 - collision - 0.37705663 | 8 - descent related incident - 0.18047646 | 32 - low altitude maneuvre - 0.13903874 |
+| 5 | The pilot's loss of control while on approach to the runway. Contributing factors were the downdraft and the lack of suitable terrain for the off-airport landing. | 22 - forced landing into unsuitable terrain - 0.23134875 | 19 - landing incident - 0.17241687 | 27 - lack of experience - 0.15016778
 
 ### Automatic summary generation
 
