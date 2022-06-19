@@ -16,6 +16,11 @@ Distribution of human factors:
 ![freq_asrs](img/freq_hf.png)
 
 
+The number of human factors in each incident report:
+
+![freq_labels_asrs](img/freq_wrt_numoflabels.png)
+
+
 ### CADORS
 |Occurrence Categories                                                 |                            |
 |:---------------------------------------------------------------------|----------------------------|
@@ -38,6 +43,9 @@ Distribution of occurrence categories:
 
 ![freq_cadors](img/occ_fq.png)
 
+The number of occurrence categories in each incident report:
+![freq_labels_cadors](img/occ.png)
+
 ## Additional baselines for the task of automatic report categorization.
 
 ASRS:
@@ -47,10 +55,6 @@ CADORS:
 ![Cadors](img/classification_CADORS.png)
 
 ## Hyperparameters
-
-### Automatic report categorization
-
-Maybe Georgios can add something here? (optional)
 
 ### Topic modeling
 
@@ -86,10 +90,6 @@ Model hyperparameters:
 - early stopping after 3 epochs
 
 ## Additional / example results
-
-### Automatic report categorization 
-
-Maybe Georgios can add something here? (optional)
 
 ### Topic modeling
 #### Topics
